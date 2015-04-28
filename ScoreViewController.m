@@ -78,6 +78,11 @@ static CGFloat scoreViewHeight = 90;
     //score ++ scoreLabels array everytime index changes
     
 }
+    // This is the code to take away the the keyboard after input.
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (void)buttonTapped:(UIStepper *)sender{
 
