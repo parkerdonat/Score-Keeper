@@ -19,6 +19,7 @@
 		71DEBF2F1924955A0032F31F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DEBF171924955A0032F31F /* UIKit.framework */; };
 		71DEBF371924955A0032F31F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71DEBF351924955A0032F31F /* InfoPlist.strings */; };
 		71DEBF391924955A0032F31F /* Score_KeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DEBF381924955A0032F31F /* Score_KeeperTests.m */; };
+		DDCB19881AF01C1C00BF77C8 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB19871AF01C1C00BF77C8 /* ScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +41,16 @@
 		71DEBF1D1924955A0032F31F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71DEBF1F1924955A0032F31F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71DEBF211924955A0032F31F /* Score Keeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Score Keeper-Prefix.pch"; sourceTree = "<group>"; };
-		71DEBF221924955A0032F31F /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
-		71DEBF231924955A0032F31F /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
-		71DEBF251924955A0032F31F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		71DEBF221924955A0032F31F /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SKAppDelegate.h; path = "Score Keeper/SKAppDelegate.h"; sourceTree = "<group>"; };
+		71DEBF231924955A0032F31F /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SKAppDelegate.m; path = "Score Keeper/SKAppDelegate.m"; sourceTree = "<group>"; };
+		71DEBF251924955A0032F31F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Score Keeper/Images.xcassets"; sourceTree = "<group>"; };
 		71DEBF2B1924955A0032F31F /* Score KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DEBF2C1924955A0032F31F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		71DEBF341924955A0032F31F /* Score KeeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Score KeeperTests-Info.plist"; sourceTree = "<group>"; };
 		71DEBF361924955A0032F31F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71DEBF381924955A0032F31F /* Score_KeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Score_KeeperTests.m; sourceTree = "<group>"; };
+		DDCB19861AF01C1C00BF77C8 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		DDCB19871AF01C1C00BF77C8 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,11 @@
 		71DEBF071924955A0032F31F = {
 			isa = PBXGroup;
 			children = (
+				71DEBF221924955A0032F31F /* SKAppDelegate.h */,
+				71DEBF231924955A0032F31F /* SKAppDelegate.m */,
+				DDCB19861AF01C1C00BF77C8 /* ScoreViewController.h */,
+				DDCB19871AF01C1C00BF77C8 /* ScoreViewController.m */,
+				71DEBF251924955A0032F31F /* Images.xcassets */,
 				71DEBF191924955A0032F31F /* Score Keeper */,
 				71DEBF321924955A0032F31F /* Score KeeperTests */,
 				71DEBF121924955A0032F31F /* Frameworks */,
@@ -107,9 +115,6 @@
 		71DEBF191924955A0032F31F /* Score Keeper */ = {
 			isa = PBXGroup;
 			children = (
-				71DEBF221924955A0032F31F /* SKAppDelegate.h */,
-				71DEBF231924955A0032F31F /* SKAppDelegate.m */,
-				71DEBF251924955A0032F31F /* Images.xcassets */,
 				71DEBF1A1924955A0032F31F /* Supporting Files */,
 			);
 			path = "Score Keeper";
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCB19881AF01C1C00BF77C8 /* ScoreViewController.m in Sources */,
 				71DEBF241924955A0032F31F /* SKAppDelegate.m in Sources */,
 				71DEBF201924955A0032F31F /* main.m in Sources */,
 			);
@@ -438,6 +444,7 @@
 				71DEBF3E1924955A0032F31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71DEBF3F1924955A0032F31F /* Build configuration list for PBXNativeTarget "Score KeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				71DEBF411924955A0032F31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
